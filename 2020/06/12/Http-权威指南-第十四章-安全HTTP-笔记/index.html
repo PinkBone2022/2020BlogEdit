@@ -10,18 +10,18 @@
   <meta name="description" content="关键词 : 密码学   对称加密   非对称加密   RSA算法   数字密码   CA   OpenSSL 数字加密入门内容 密码: 对文本进行编码，使偷窥者无法识别的算法 秘钥: 改变密码行为的数字化参数 对称秘钥加密系统: 编&#x2F;解码使用相同秘钥的算法 非对称秘钥加密系统: 编&#x2F;解码使用不同秘钥的算法 公开秘钥加密系统:  数字签名: 用来验证报文未被伪造或篡改的校验和 数字证书: 由一个可信">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Http 权威指南 第十四章 安全HTTP 笔记">
-<meta property="og:url" content="https://fuqiao2017.github.io/2020/06/12/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E5%AE%89%E5%85%A8HTTP-%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://pinkbone2022.github.io/2020/06/12/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E5%AE%89%E5%85%A8HTTP-%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="追求真实">
 <meta property="og:description" content="关键词 : 密码学   对称加密   非对称加密   RSA算法   数字密码   CA   OpenSSL 数字加密入门内容 密码: 对文本进行编码，使偷窥者无法识别的算法 秘钥: 改变密码行为的数字化参数 对称秘钥加密系统: 编&#x2F;解码使用相同秘钥的算法 非对称秘钥加密系统: 编&#x2F;解码使用不同秘钥的算法 公开秘钥加密系统:  数字签名: 用来验证报文未被伪造或篡改的校验和 数字证书: 由一个可信">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/HTTPS%E5%AE%89%E5%85%A8%E5%B1%82.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/SSL%E6%8F%A1%E6%89%8B%E8%BF%87%E7%A8%8B.jpg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/ssl-handshake-rsa.png">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/HTTPS%E5%AE%89%E5%85%A8%E5%B1%82.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/SSL%E6%8F%A1%E6%89%8B%E8%BF%87%E7%A8%8B.jpg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/ssl-handshake-rsa.png">
 <meta property="article:published_time" content="2020-06-12T06:32:10.000Z">
 <meta property="article:modified_time" content="2021-05-30T01:31:08.403Z">
-<meta property="article:author" content="Zhang qijie">
+<meta property="article:author" content="pinkbone">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://fuqiao2017.github.io/images/HTTPS%E5%AE%89%E5%85%A8%E5%B1%82.jpeg">
+<meta name="twitter:image" content="https://pinkbone2022.github.io/images/HTTPS%E5%AE%89%E5%85%A8%E5%B1%82.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="追求真实" type="application/atom+xml">
   
@@ -48,7 +48,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">翻滚吧！卷毛</a>
+          <a href="/" id="subtitle">种一棵树最好的时间是十年前，其次是现在</a>
         </h2>
       
     </div>
@@ -68,7 +68,7 @@
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fuqiao2017.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pinkbone2022.github.io"></form>
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/12/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E5%AE%89%E5%85%A8HTTP-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj50010d4skcgjw3m7d" class="article-share-link">Share</a>
+      <a data-url="https://pinkbone2022.github.io/2020/06/12/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E5%AE%89%E5%85%A8HTTP-%E7%AC%94%E8%AE%B0/" data-id="cladfymuc000hiosk3nclbuwl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -270,7 +270,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2022 Zhang qijie<br>
+      &copy; 2022 pinkbone<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

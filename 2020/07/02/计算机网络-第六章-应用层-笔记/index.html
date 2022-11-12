@@ -10,21 +10,21 @@
   <meta name="description" content="概述 :  域名系统 DNS — 从域名解析出 IP 地址 万维网和 HTTP 协议，以及万维网的两种不同的信息搜索引擎 电子邮件的传送过程，SMTP 协议和 POP3 协议、IMAP 协议使用的场合 动态主机配置 DHCP 的特点 网络管理的三个组成部分（ SNMP 本身、管理信息结构 SMI 和管理信息库 MIB ）的作用 系统调用和应用编程接口的基本概念 P2P 文件系统  域名系统 DNS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络 第六章 应用层 笔记">
-<meta property="og:url" content="https://fuqiao2017.github.io/2020/07/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82-%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://pinkbone2022.github.io/2020/07/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82-%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="追求真实">
 <meta property="og:description" content="概述 :  域名系统 DNS — 从域名解析出 IP 地址 万维网和 HTTP 协议，以及万维网的两种不同的信息搜索引擎 电子邮件的传送过程，SMTP 协议和 POP3 协议、IMAP 协议使用的场合 动态主机配置 DHCP 的特点 网络管理的三个组成部分（ SNMP 本身、管理信息结构 SMI 和管理信息库 MIB ）的作用 系统调用和应用编程接口的基本概念 P2P 文件系统  域名系统 DNS">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%84.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/DNS%E6%9F%A5%E8%AF%A2%E4%B8%BE%E4%BE%8B.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/FTP%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AATCP%E8%BF%9E%E6%8E%A5.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/%E8%AF%B7%E6%B1%82%E4%B8%80%E4%B8%AA%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%97%B6%E9%97%B4.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/CGI%E5%8A%A8%E6%80%81%E6%96%87%E6%A1%A3.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/DHCP%E4%B8%AD%E7%BB%A7%E5%8D%95%E6%92%AD.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%84.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/DNS%E6%9F%A5%E8%AF%A2%E4%B8%BE%E4%BE%8B.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/FTP%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AATCP%E8%BF%9E%E6%8E%A5.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/%E8%AF%B7%E6%B1%82%E4%B8%80%E4%B8%AA%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%97%B6%E9%97%B4.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/CGI%E5%8A%A8%E6%80%81%E6%96%87%E6%A1%A3.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/DHCP%E4%B8%AD%E7%BB%A7%E5%8D%95%E6%92%AD.jpeg">
 <meta property="article:published_time" content="2020-07-02T02:57:03.000Z">
 <meta property="article:modified_time" content="2021-05-30T01:31:08.422Z">
-<meta property="article:author" content="Zhang qijie">
+<meta property="article:author" content="pinkbone">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://fuqiao2017.github.io/images/%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%84.jpeg">
+<meta name="twitter:image" content="https://pinkbone2022.github.io/images/%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%84.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="追求真实" type="application/atom+xml">
   
@@ -51,7 +51,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">翻滚吧！卷毛</a>
+          <a href="/" id="subtitle">种一棵树最好的时间是十年前，其次是现在</a>
         </h2>
       
     </div>
@@ -71,7 +71,7 @@
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fuqiao2017.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pinkbone2022.github.io"></form>
       </div>
     </div>
   </div>
@@ -147,7 +147,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/07/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj60011d4skhvph9zb3" class="article-share-link">Share</a>
+      <a data-url="https://pinkbone2022.github.io/2020/07/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cladfymuv000ziosk78fmadxi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -250,7 +250,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2022 Zhang qijie<br>
+      &copy; 2022 pinkbone<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

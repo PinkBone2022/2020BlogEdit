@@ -10,19 +10,19 @@
   <meta name="description" content="关键词 : 攻击与安全 概述 :  计算机网络面临的安全性威胁和计算机网络安全的主要问题 对称秘钥密码体制和公钥密码体制的特点 数字签名与鉴别的概念 网络层安全协议 IPsec 协议族和运输层安全协议 SSL&#x2F;TLS 的要点 应用层电子邮件的安全措施 系统安全: 防火墙与入侵检测  网络安全问题graph LR A[攻击] --&gt; B[被动攻击] A[攻击] --&gt; C[主动攻击] 被动攻击 :">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络 第七章 网络安全 笔记">
-<meta property="og:url" content="https://fuqiao2017.github.io/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://pinkbone2022.github.io/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="追求真实">
 <meta property="og:description" content="关键词 : 攻击与安全 概述 :  计算机网络面临的安全性威胁和计算机网络安全的主要问题 对称秘钥密码体制和公钥密码体制的特点 数字签名与鉴别的概念 网络层安全协议 IPsec 协议族和运输层安全协议 SSL&#x2F;TLS 的要点 应用层电子邮件的安全措施 系统安全: 防火墙与入侵检测  网络安全问题graph LR A[攻击] --&gt; B[被动攻击] A[攻击] --&gt; C[主动攻击] 被动攻击 :">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/%E8%BF%90%E8%BE%93%E5%B1%82%E4%BD%BF%E7%94%A8%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/SSL%E5%BB%BA%E7%AB%8B%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AF%9D%E8%BF%87%E7%A8%8B.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/%E5%9C%A8%E5%8F%91%E9%80%81%E6%94%BE%E7%9A%84PGP%E5%A4%84%E7%90%86.jpeg">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/%E5%9C%A8%E6%8E%A5%E6%94%B6%E6%96%B9%E7%9A%84PGP%E5%A4%84%E7%90%86.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/%E8%BF%90%E8%BE%93%E5%B1%82%E4%BD%BF%E7%94%A8%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/SSL%E5%BB%BA%E7%AB%8B%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AF%9D%E8%BF%87%E7%A8%8B.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/%E5%9C%A8%E5%8F%91%E9%80%81%E6%94%BE%E7%9A%84PGP%E5%A4%84%E7%90%86.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/%E5%9C%A8%E6%8E%A5%E6%94%B6%E6%96%B9%E7%9A%84PGP%E5%A4%84%E7%90%86.jpeg">
 <meta property="article:published_time" content="2020-07-17T08:55:33.000Z">
 <meta property="article:modified_time" content="2021-05-30T01:31:08.419Z">
-<meta property="article:author" content="Zhang qijie">
+<meta property="article:author" content="pinkbone">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://fuqiao2017.github.io/images/%E8%BF%90%E8%BE%93%E5%B1%82%E4%BD%BF%E7%94%A8%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE.jpeg">
+<meta name="twitter:image" content="https://pinkbone2022.github.io/images/%E8%BF%90%E8%BE%93%E5%B1%82%E4%BD%BF%E7%94%A8%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="追求真实" type="application/atom+xml">
   
@@ -49,7 +49,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">翻滚吧！卷毛</a>
+          <a href="/" id="subtitle">种一棵树最好的时间是十年前，其次是现在</a>
         </h2>
       
     </div>
@@ -69,7 +69,7 @@
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fuqiao2017.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pinkbone2022.github.io"></form>
       </div>
     </div>
   </div>
@@ -154,7 +154,7 @@ A[鉴别] --> C[实体鉴别]</pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj2000xd4skbhhch722" class="article-share-link">Share</a>
+      <a data-url="https://pinkbone2022.github.io/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/" data-id="cladfymuw0010ioskgb6p53r9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -257,7 +257,7 @@ A[鉴别] --> C[实体鉴别]</pre>
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2022 Zhang qijie<br>
+      &copy; 2022 pinkbone<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

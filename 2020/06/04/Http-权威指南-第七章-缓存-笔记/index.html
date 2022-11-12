@@ -10,16 +10,16 @@
   <meta name="description" content="关键词 : Modem  缓存命中  新鲜度检测  文档命中率  字节命中率Modem(调制解调器，猫)缓存命中(cache hit&#x2F;miss)新鲜度检测 : 缓存通过特殊请求检测内容是否最新，称为 Http 再验证 (revalidation)如果新鲜度检测发现对象已经被删除，则服务器返回404，缓存也会将对应副本删除客户端判断响应是否来自缓存: 可以通过首部 Via、Date、Age  缓存的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Http 权威指南 第七章 缓存 笔记">
-<meta property="og:url" content="https://fuqiao2017.github.io/2020/06/04/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BC%93%E5%AD%98-%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://pinkbone2022.github.io/2020/06/04/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BC%93%E5%AD%98-%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="追求真实">
 <meta property="og:description" content="关键词 : Modem  缓存命中  新鲜度检测  文档命中率  字节命中率Modem(调制解调器，猫)缓存命中(cache hit&#x2F;miss)新鲜度检测 : 缓存通过特殊请求检测内容是否最新，称为 Http 再验证 (revalidation)如果新鲜度检测发现对象已经被删除，则服务器返回404，缓存也会将对应副本删除客户端判断响应是否来自缓存: 可以通过首部 Via、Date、Age  缓存的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fuqiao2017.github.io/images/%E5%A4%84%E7%90%86%E4%B8%80%E4%B8%AA%E6%96%B0%E9%B2%9C%E7%9A%84%E7%BC%93%E5%AD%98%E5%91%BD%E4%B8%AD.jpeg">
+<meta property="og:image" content="https://pinkbone2022.github.io/images/%E5%A4%84%E7%90%86%E4%B8%80%E4%B8%AA%E6%96%B0%E9%B2%9C%E7%9A%84%E7%BC%93%E5%AD%98%E5%91%BD%E4%B8%AD.jpeg">
 <meta property="article:published_time" content="2020-06-04T01:11:13.000Z">
 <meta property="article:modified_time" content="2021-05-30T01:31:08.396Z">
-<meta property="article:author" content="Zhang qijie">
+<meta property="article:author" content="pinkbone">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://fuqiao2017.github.io/images/%E5%A4%84%E7%90%86%E4%B8%80%E4%B8%AA%E6%96%B0%E9%B2%9C%E7%9A%84%E7%BC%93%E5%AD%98%E5%91%BD%E4%B8%AD.jpeg">
+<meta name="twitter:image" content="https://pinkbone2022.github.io/images/%E5%A4%84%E7%90%86%E4%B8%80%E4%B8%AA%E6%96%B0%E9%B2%9C%E7%9A%84%E7%BC%93%E5%AD%98%E5%91%BD%E4%B8%AD.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="追求真实" type="application/atom+xml">
   
@@ -46,7 +46,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">翻滚吧！卷毛</a>
+          <a href="/" id="subtitle">种一棵树最好的时间是十年前，其次是现在</a>
         </h2>
       
     </div>
@@ -66,7 +66,7 @@
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fuqiao2017.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pinkbone2022.github.io"></form>
       </div>
     </div>
   </div>
@@ -134,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/04/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BC%93%E5%AD%98-%E7%AC%94%E8%AE%B0/" data-id="cladf3gib0005d4sk8t0ja2wt" class="article-share-link">Share</a>
+      <a data-url="https://pinkbone2022.github.io/2020/06/04/Http-%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BC%93%E5%AD%98-%E7%AC%94%E8%AE%B0/" data-id="cladfymtw0003iosk9dckf3k2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -237,7 +237,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2022 Zhang qijie<br>
+      &copy; 2022 pinkbone<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
