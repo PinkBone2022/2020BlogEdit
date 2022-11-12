@@ -1,6 +1,6 @@
 # 2020BlogEdit
 
-### https://fuqiao2017.github.io/
+### https://pinkbone2022.github.io/
 
 ### 先将改动提交到仓库
 
