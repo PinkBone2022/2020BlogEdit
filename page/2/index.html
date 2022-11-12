@@ -70,6 +70,112 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-计算机网络-第七章-网络安全-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-07-17T08:55:33.000Z" itemprop="datePublished">2020-07-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/">计算机网络 第七章 网络安全 笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong><em>关键词</em></strong> : 攻击与安全</p>
+<p><strong>概述</strong> :</p>
+<ol>
+<li>计算机网络面临的安全性威胁和计算机网络安全的主要问题</li>
+<li>对称秘钥密码体制和公钥密码体制的特点</li>
+<li>数字签名与鉴别的概念</li>
+<li>网络层安全协议 IPsec 协议族和运输层安全协议 SSL/TLS 的要点</li>
+<li>应用层电子邮件的安全措施</li>
+<li>系统安全: 防火墙与入侵检测</li>
+</ol>
+<h3 id="网络安全问题"><a href="#网络安全问题" class="headerlink" title="网络安全问题"></a>网络安全问题</h3><pre class="mermaid">graph LR
+A[攻击] --> B[被动攻击]
+A[攻击] --> C[主动攻击]</pre>
+<p><strong>被动攻击</strong> : 被动攻击是指攻击者从网络上窃听他人的通信内容。通常称为 <strong><em>截获</em></strong><br>截获并分析 <strong><em>协议数据单元 PDU</em></strong> 的信息(控制信息、地址、身份)进行 <strong><em>流量分析 traffic analysis</em></strong><br><strong>主动攻击</strong> :<br>a. 篡改: 包括 篡改报文、中断报文、伪造报文<br>b. 恶意程序: 病毒 virus、蠕虫 worm、特洛伊木马 Trojan horse、逻辑炸弹 logic bomb、后门入侵 backdoor knocking、流氓软件<br>c. 拒绝服务: Denial of Service DoS, 大量请求导致源服务器拒绝提供服务不再工作, 网络带宽攻击、交换机中毒</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fuqiao2017.github.io/2020/07/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj2000xd4skbhhch722" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-React-学习-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/09/React-%E5%AD%A6%E4%B9%A0-%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-07-09T09:45:19.000Z" itemprop="datePublished">2020-07-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/09/React-%E5%AD%A6%E4%B9%A0-%E7%AC%94%E8%AE%B0/">React 学习 笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>react 解决复用方式 :<br>render props / 高阶组件 (需要重新组织组件结构)<br>hooks<br>context<br>memoized</p>
+<h2 id="Hook"><a href="#Hook" class="headerlink" title="Hook"></a>Hook</h2><p><strong>简介</strong>:</p>
+<ol>
+<li>Hook 使你在无需修改组件结构的情况下复用状态逻辑</li>
+<li>Hook 使你在不编写 class 的情况下可以使用 state 以及更多的 React 特性</li>
+<li>在新的代码中同时使用 Hook 和 class</li>
+<li>Hook 使用了 js 的闭包机制</li>
+</ol>
+<p><strong>概览</strong>:</p>
+<ol>
+<li>State Hook<br>内置的 Hook: useState…<br>useState: 更新 state 是直接替换而不是合并<br>useState 可以传入一个函数，React 只会在首次渲染时调用这个函数<br>创建自己的 Hook: 复用不同组件之间的状态逻辑</li>
+<li>Effect Hook<br>Effect 副作用、作用，告诉 React 函数组件需要在渲染后执行某些操作<br>useEffect: 注册一个副作用函数，可以执行副作用操作或者取消副作用(取消订阅)<br>effect 可选清除机制<br>useEffect 副作用函数可以通过返回一个清除函数来指定如何清除副作用<br>React 会在组件卸载的时候执行清除操作<br>useEffect 可在组件中多次使用<br>React 等待浏览器完成渲染之后再延迟调用 useEffect
+        
+          <p class="article-more-link">
+            <a href="/2020/07/09/React-%E5%AD%A6%E4%B9%A0-%E7%AC%94%E8%AE%B0/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fuqiao2017.github.io/2020/07/09/React-%E5%AD%A6%E4%B9%A0-%E7%AC%94%E8%AE%B0/" data-id="cladf3gis000ld4sk6f5jg6ty" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-算法-第二章-排序-笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/07/%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%8E%92%E5%BA%8F-%E7%AC%94%E8%AE%B0/" class="article-date">
@@ -111,7 +217,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/07/07/%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%8E%92%E5%BA%8F-%E7%AC%94%E8%AE%B0/" data-id="cl5z1unoi000vx4skhq3khmsp" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/07/07/%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%8E%92%E5%BA%8F-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj1000vd4skeyb4eysf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +268,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/07/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cl5z1unok0010x4sk2ejz1vmu" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/07/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj60011d4skhvph9zb3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +313,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/07/01/Vue-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cl5z1unof000qx4sk0bdsay2d" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/07/01/Vue-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cladf3gix000pd4sk7kgkgql6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -248,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/28/JS-%E4%B8%AD%E7%9A%84-this/" data-id="cl5z1uno7000ix4sk14dcc76t" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/06/28/JS-%E4%B8%AD%E7%9A%84-this/" data-id="cladf3giq000jd4sk4kcddcf2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -285,7 +391,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/24/%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E7%A1%80-%E7%AC%94%E8%AE%B0/" data-id="cl5z1unoh000ux4sk5qpy8qn8" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/06/24/%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E7%A1%80-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj0000td4sk60mdaaqr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -335,7 +441,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%BF%90%E8%BE%93%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cl5z1unoj000xx4ske2b2g747" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/06/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%BF%90%E8%BE%93%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj4000zd4skh94xfa1y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -385,7 +491,7 @@ A[路由选择协议] -->B(分类)
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cl5z1unok000zx4skff05gcj4" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/06/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%B1%82-%E7%AC%94%E8%AE%B0/" data-id="cladf3gj60012d4sk312lhlww" class="article-share-link">Share</a>
       
       
     </footer>
@@ -428,94 +534,7 @@ A[路由选择协议] -->B(分类)
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/15/Promise-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AApromise/" data-id="cl5z1unoc000nx4sk8gqo4xz6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Promise-抽象异步处理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/13/Promise-%E6%8A%BD%E8%B1%A1%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/" class="article-date">
-  <time datetime="2020-06-13T01:28:09.000Z" itemprop="datePublished">2020-06-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/13/Promise-%E6%8A%BD%E8%B1%A1%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/">Promise 抽象异步处理</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="promise-遵循的一些规范"><a href="#promise-遵循的一些规范" class="headerlink" title="promise 遵循的一些规范"></a>promise 遵循的一些规范</h4><ul>
-<li>promise 的实现内部必须 catch 注册的所有回调和 executor <strong><em>throw</em></strong> 的错误(或者其他错误，比如调用一个未定义的函数)，然后把 promise 的状态改变到 rejected，(即吃掉抛出的错误)；此时错误需要被后续的 .catch 方法注册的回调处理，或者被 .then 方法注册的 onRejected 方法处理，否则会报 uncaught 错误，即错误继续被抛出<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 外层 try catch 不能捕获 promise 代码里 throw 的错误</span></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="comment">// 内部的实现: 把 ReferenceError: aaaaa is not defined catch 后 调用 reject 方法改变 promise 的状态，后续没有处理，所以报 uncaught 错误</span></span><br><span class="line">  <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;aaaaa()&#125;)</span><br><span class="line">&#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'catch nothing'</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2020/06/13/Promise-%E6%8A%BD%E8%B1%A1%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/13/Promise-%E6%8A%BD%E8%B1%A1%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/" data-id="cl5z1unoa000mx4sk98vqcwbv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-EventLoop-并发模型与事件循环" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/12/EventLoop-%E5%B9%B6%E5%8F%91%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/" class="article-date">
-  <time datetime="2020-06-12T07:06:51.000Z" itemprop="datePublished">2020-06-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/12/EventLoop-%E5%B9%B6%E5%8F%91%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/">EventLoop 并发模型与事件循环</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="JS-有一个基于事件循环的并发模型，事件循环负责执行代码、搜集和处理事件以及执行队列中的子任务"><a href="#JS-有一个基于事件循环的并发模型，事件循环负责执行代码、搜集和处理事件以及执行队列中的子任务" class="headerlink" title="JS 有一个基于事件循环的并发模型，事件循环负责执行代码、搜集和处理事件以及执行队列中的子任务"></a>JS 有一个基于<strong><em>事件循环</em></strong>的并发模型，事件循环负责执行代码、搜集和处理事件以及执行队列中的子任务</h5><p><strong>* JS 是单线程语言 *</strong><br><img src="/images/%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8F%8F%E8%BF%B0.jpeg" alt=""></p>
-<p><strong><em>可能的缺陷</em></strong> : 每一个消息完整地执行后，其它消息才会被执行; 所以当一个消息需要太长时间才能处理完毕时，Web应用程序就无法处理与用户的交互，例如点击或滚动</p>
-<p><strong><em>事件和回调函数</em></strong> :<br>  事件: 用户点击、页面滚动、ajax onload、IO 事件等等<br>  回调函数: 被挂起等待对应事件触发然后进栈执行的代码</p>
-<p><strong><em>setTimeout</em></strong> : 第二个参数为 <strong><em>最小等待时间</em></strong></p>
-<h5 id="多个运行时互相通信"><a href="#多个运行时互相通信" class="headerlink" title="多个运行时互相通信"></a>多个运行时互相通信</h5><p>一个 web worker 或者一个跨域的 iframe 都有自己的栈、堆和消息队列。两个不同的运行时只能通过 postMessage 方法进行通信。如果另一个运行时侦听 message 事件，则此方法会向该运行时添加消息</p>
-        
-          <p class="article-more-link">
-            <a href="/2020/06/12/EventLoop-%E5%B9%B6%E5%8F%91%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://fuqiao2017.github.io/2020/06/12/EventLoop-%E5%B9%B6%E5%8F%91%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/" data-id="cl5z1unne0000x4skeabd2bvc" class="article-share-link">Share</a>
+      <a data-url="https://fuqiao2017.github.io/2020/06/15/Promise-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AApromise/" data-id="cladf3git000md4skd936eram" class="article-share-link">Share</a>
       
       
     </footer>
@@ -562,7 +581,7 @@ A[路由选择协议] -->B(分类)
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li></ul>
     </div>
   </div>
 
@@ -575,6 +594,14 @@ A[路由选择协议] -->B(分类)
       <ul>
         
           <li>
+            <a href="/2022/08/15/Trump-home-raided/">Trump home &#39;raided&#39;</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/27/If-vs-Whether/">If vs Whether</a>
+          </li>
+        
+          <li>
             <a href="/2022/07/23/Heatwaves-across-the-world/">Heatwaves across the world</a>
           </li>
         
@@ -584,14 +611,6 @@ A[路由选择协议] -->B(分类)
         
           <li>
             <a href="/2021/05/30/%E5%A6%82%E5%9B%BE/">如图</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/28/React-%E8%B7%AF%E7%94%B1/">React 路由</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/24/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/">深入理解计算机系统 第一章 计算机系统漫游</a>
           </li>
         
       </ul>
