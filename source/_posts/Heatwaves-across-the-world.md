@@ -14,8 +14,10 @@ tags: News-Review
 
 Heatwaves and fires scorch Europe, Africa, and Asia.
 
+<!--more-->
+
 \- _So that's start with the word Heatwave which is everywhere. And it just means a period of time when the temprature is much higher than usual. But for the headline the word we are looking at is scorch and it connects heat, and we got a lot of words about heat in English._
-\- _Yes we do. And scorch is one of them. It means to heat something to a level which damages it. For example, have you ever worked on a pavements and back feet on a hot day?_
+\- _Yes we do. And scorch is one of them. It means to heat something to a level which damages it. For example, have you ever worked on a pavements and bare feet on a hot day?_
 \- _Ye, it horrible isn't it. It can scorch your bottom of feet. And that word scorch we can use it with the word marks. Now for example, if you ironing your shirt, xxxxx nice and flat, if you leave that ironing on your shirt for too long, it can leave scorch marks._
 \- _It does, i have done this before. And Scorch in this headline, means the heat from the sun actually **literally** damages the ground. so it scorches the ground._
 \- _Yes and as you said. its literal use here. But we often use scorching to talk about hot weather, it's an **exaggeration**, when we said it's scorching, we don't usually mean that the ground is burning._
